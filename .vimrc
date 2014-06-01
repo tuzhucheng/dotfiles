@@ -12,6 +12,10 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'Pychimp/vim-luna'
 Plugin 'tpope/vim-vividchalk'
+Plugin 'moll/vim-node'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'digitaltoad/vim-jade'
 
 " My bundles here:
 
@@ -29,3 +33,15 @@ set laststatus=2
 set background=dark
 colorscheme solarized
 let g:airline_theme='badwolf'
+
+" GUI
+if has("gui_running")
+    if has ("gui_gtk2")
+        set guifont=Monospace\ 11
+    elseif has("gui_macvim")
+"        set guifont=Menlo\ Regular:h14
+    elseif has("gui_win32")
+"        set guifont=Consolas:h11:cANSI
+    endif
+endif
+
