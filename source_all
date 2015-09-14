@@ -1,0 +1,8 @@
+source ~/dotfiles/aliases_all
+
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    source ~/dotfiles/aliases_linux
+fi
+
+source ~/dotfiles/bash_prompt
