@@ -8,3 +8,4 @@ if [[ "$unamestr" == 'Linux' ]]; then
 fi
 
 source ~/dotfiles/bash_prompt.sh
+source ~/dotfiles/git-completion.bash
