@@ -49,8 +49,10 @@ colorscheme solarized
 let g:airline_theme='badwolf'
 
 " Tabs
-map <F7> :tabp<CR>
-map <F8> :tabn<CR>
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
 
 " Strip trailing whitespace
 nnoremap <leader><space> :%s/\s\+$//<CR>
