@@ -12,7 +12,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
-Plugin 'wincent/command-t'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
 Plugin 'majutsushi/tagbar'
@@ -82,6 +82,9 @@ nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 " Tagbar
 nnoremap <leader>] :TagbarToggle<CR>
+
+" ctrlp
+nnoremap <leader>t :CtrlP<CR>
 
 " grep setting for LaTeX suite
 set grepprg=grep\ -nH\ $*
