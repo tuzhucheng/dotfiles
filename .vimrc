@@ -29,6 +29,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'digitaltoad/vim-jade'
 
 " Functional programming
+Plugin 'wlangstroth/vim-racket'
 Plugin 'derekwyatt/vim-scala'
 
 " Configurations for built-in functionalities
@@ -43,7 +44,7 @@ set number
 set t_Co=16
 set laststatus=2
 set mouse=a
-set background=dark
+set background=light
 set hlsearch
 colorscheme solarized
 let g:airline_theme='badwolf'
@@ -66,6 +67,7 @@ au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 " NERDTree
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.pyc$']
 
 " auto open NERDTree if no file is opened
 autocmd StdinReadPre * let s:std_in=1
@@ -86,4 +88,6 @@ set grepprg=grep\ -nH\ $*
 
 let g:tex_flavor='latex'
 set sw=4
+
+autocmd filetype crontab setlocal nobackup nowritebackup
 

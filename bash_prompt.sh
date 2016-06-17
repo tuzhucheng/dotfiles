@@ -6,7 +6,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
     eval $(dircolors ~/dotfiles/dircolors.ansi-dark)
 elif [[ "$unamestr" == 'Darwin' ]]; then
     # Assuming brew install coreutils
-    eval $(gdircolors ~/dotfiles/dircolors.ansi-dark)
+    eval $(gdircolors ~/dotfiles/dircolors.ansi-light)
 fi
 
 prompt_git() {
