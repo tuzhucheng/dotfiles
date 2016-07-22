@@ -67,7 +67,7 @@ au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 " NERDTree
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.o$', '\.d$']
 
 " auto open NERDTree if no file is opened
 autocmd StdinReadPre * let s:std_in=1
@@ -85,6 +85,7 @@ nnoremap <leader>] :TagbarToggle<CR>
 
 " ctrlp
 nnoremap <leader>t :CtrlP<CR>
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
 " grep setting for LaTeX suite
 set grepprg=grep\ -nH\ $*
