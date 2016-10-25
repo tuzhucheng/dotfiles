@@ -1,12 +1,15 @@
 set nocompatible " be iMproved
 filetype off " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 " Essentials
-Plugin 'gmarik/vundle'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
@@ -32,7 +35,9 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'derekwyatt/vim-scala'
 
-" Configurations for built-in functionalities
+" All Plugins must be added before the following line
+call vundle#end()
+
 filetype plugin indent on
 syntax enable
 
@@ -44,7 +49,7 @@ set number
 set t_Co=16
 set laststatus=2
 set mouse=a
-set background=light
+set background=dark
 set hlsearch
 colorscheme solarized
 let g:airline_theme='badwolf'
