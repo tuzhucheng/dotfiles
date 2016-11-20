@@ -65,12 +65,6 @@ nnoremap tl  :tablast<CR>
 " Strip trailing whitespace
 nnoremap <leader><space> :%s/\s\+$//<CR>
 
-" closetag
-let g:closetag_html_style=1
-au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
-" autocomplete when pressing space for html tags
-" ":iabbrev </ </<C-X><C-O>
-
 " NERDTree
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
