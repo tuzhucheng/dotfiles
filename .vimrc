@@ -33,9 +33,10 @@ Plugin 'moll/vim-node'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'digitaltoad/vim-jade'
 
-" Functional programming
+" Programming languages
 Plugin 'wlangstroth/vim-racket'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'keith/swift.vim'
 
 " All Plugins must be added before the following line
 call vundle#end()
@@ -51,7 +52,7 @@ set number
 set t_Co=16
 set laststatus=2
 set mouse=a
-set background=dark
+set background=light
 set hlsearch
 colorscheme solarized
 let g:airline_theme='badwolf'
