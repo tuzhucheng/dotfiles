@@ -52,7 +52,7 @@ set number
 set t_Co=16
 set laststatus=2
 set mouse=a
-set background=light
+set background=dark
 set hlsearch
 colorscheme solarized
 let g:airline_theme='badwolf'
