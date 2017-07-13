@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Essentials
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
@@ -52,7 +53,7 @@ set number
 set t_Co=16
 set laststatus=2
 set mouse=a
-set background=light
+set background=dark
 set hlsearch
 colorscheme solarized
 let g:airline_theme='badwolf'
@@ -62,6 +63,7 @@ nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
 nnoremap tl  :tablast<CR>
+nnoremap ww  <C-w>w
 
 " Strip trailing whitespace
 nnoremap <leader><space> :%s/\s\+$//<CR>
