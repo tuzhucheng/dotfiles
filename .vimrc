@@ -63,7 +63,6 @@ nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
 nnoremap tl  :tablast<CR>
-nnoremap ww  <C-w>w
 
 " Strip trailing whitespace
 nnoremap <leader><space> :%s/\s\+$//<CR>
