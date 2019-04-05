@@ -98,3 +98,4 @@ set sw=4
 
 autocmd filetype crontab setlocal nobackup nowritebackup
 
+set backspace=indent,eol,start
