@@ -55,7 +55,7 @@ set laststatus=2
 set mouse=a
 set background=dark
 set hlsearch
-colorscheme solarized
+:silent! colorscheme solarized
 let g:airline_theme='badwolf'
 
 " Tabs
