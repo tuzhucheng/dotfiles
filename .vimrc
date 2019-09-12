@@ -38,6 +38,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'keith/swift.vim'
+Plugin 'google/vim-jsonnet'
 
 " All Plugins must be added before the following line
 call vundle#end()
