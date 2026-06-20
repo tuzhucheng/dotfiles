@@ -24,7 +24,6 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Appearance
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'Pychimp/vim-luna'
 Plugin 'tpope/vim-vividchalk'
@@ -54,9 +53,7 @@ set number
 set t_Co=16
 set laststatus=2
 set mouse=a
-set background=dark
 set hlsearch
-:silent! colorscheme solarized
 let g:airline_theme='badwolf'
 
 " Tabs
